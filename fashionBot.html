@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionBot</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif; /* Change the font family if needed */
+            background-image: url("https://blog.myntra.com/wp-content/uploads/2023/12/Garden-Party-Renaissance_Myntra.jpg");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Ensure background covers the entire viewport */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #heading-container {
+            margin-top: 0px; 
+            text-align: center;
+            color: yellow;
+        }
+        #chatbot-container {
+            width: 100%;
+            max-width: 600px; /* Adjust as needed */
+            margin-top: auto; /* Push chatbot container to the bottom */
+        }
+	h1{
+	    font-size: 70px;
+	}
+    </style>
+</head>
+<body>
+    <div id="heading-container">
+        <h1>FashionBot</h1>
+    </div>
+    <div id="chatbot-container">
+        <script type="text/javascript">
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                    window.voiceflow.chat.load({
+                        verify: { projectID: '65cb6803aeef469764c17ac6' },
+                        url: 'https://general-runtime.voiceflow.com',
+                        versionID: 'production'
+                    });
+                }
+                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+        </script>
+    </div>
+</body>
+</html>
+
+
+
